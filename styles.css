@@ -14,16 +14,21 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color:lavender;
+    background-color: #BE97C6;
 }
 
 .header-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:indigo;
-    width: 75vw;
-    height: 4rem;
+    color: #BE97C6;
+    background-color: #2E294E;
+    width: 40vw;
+    height: 6rem;
+}
+
+.header-wrapper i {
+    color: #BE97C6;
 }
 
 .month-name-wrapper {
@@ -35,7 +40,7 @@ body {
 .day-of-week-wrapper {
     border: 2.5px solid silver;
     display: grid;
-    width: 75vw;
+    width: 100vw;
     gap: 1.5px;
     background-color: whitesmoke;
     grid-template-rows: 3rem 1fr;
@@ -44,7 +49,82 @@ body {
 .day-weekends {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 1.5px;
+}
+
+.days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: slategray;
+    background-color: gold;
+    border: 2px ridge slateblue;
+}
+
+.weekend {
+    border: 2px ridge darkblue;
+}
+
+.dates-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: lavender;
+}
+
+.date-squares {
+    height: 4rem;
+    position: relative;
+    background-color: palevioletred;
+}
+
+.overflow {
+    background-color: pink;
+}
+
+.date {
+    background-color:rgb(227, 152, 192);
+    color: black;
+    font-size: 130%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+}
+
+.date-squares textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 90%;
+    border: none;
+    background-color: lavender;
+    resize: none;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 6rem;
+}
+
+.year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 4rem;
+    color: #BE97C6;
+    background-color: #2E294E;
+    width: 40vw;
+    height: 6rem;
 }
